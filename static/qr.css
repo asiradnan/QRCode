@@ -24,3 +24,21 @@ button{
     font-size: 18px;
     padding: 4px;
 }
+@media screen and (max-width:600px) {
+    div{
+        width: 100%;
+        min-width: 100px;
+    }
+    img{
+        border: 1px solid black;
+        border-radius: 5px;
+        max-width: calc(100% - 20px);
+    }
+    button{
+        margin-top: 10px;
+        width: 80px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 3px;
+    }
+}
