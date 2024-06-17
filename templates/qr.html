@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'qr.css' %}">
+    <link rel="icon" href="{% static 'qr_icon.png' %}">
+    <title>QR Code</title>
+</head>
+<body>
+    <div>
+        <img src="data:image/png;base64,{{ img }}" alt="QR Code"><br>
+        <a href="data:image/png;base64,{{ img }}" download="QR Code"><button>Download</button></a>
+    </div>
+    
+</body>
+</html>

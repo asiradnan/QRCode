@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="icon" href="{% static 'qr_icon.png' %}">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>QR Code</title>
+</head>
+<body>
+    <img src="{% static 'rsz_qr-removebg.png' %}">
+    <form method="post" action="{% url 'qr' %}">
+        {% csrf_token %}
+        <p>
+            <label for="data">Enter your text here: </label>
+            <textarea rows="6" cols="30" id="data" name="data" placeholder="Text/Link that you turn into a QR Code"></textarea>
+        </p>
+        <p>
+            <label for="color">Pick the fill color: </label>
+            <input type="color"  name="color" value="#000000">
+        </p>
+        <!-- <select name="box_size">
+            <option value="l">Small</option>
+            <option value="m">Medium</option>
+        </select> -->
+        <p>
+            <label for="backcolor">Pick the background color: </label>
+            <input type="color" name="backcolor" value="#ffffff">
+        </p>
+        <button type="submit">Generate QR Code</button>
+    </form>
+</body>
+</html>
