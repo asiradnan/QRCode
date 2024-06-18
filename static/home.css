@@ -49,17 +49,39 @@ img{
     height: 100px;
     margin: auto;
 }
-input[type="color"]{
+input{
     height: 25px;
     width: 80px;
     border: 1px solid grey;
     border-radius: 4px;
     background-color: azure;
 }
-input[type="color"]:hover{
+input:hover{
     cursor: pointer;
+}
+input[type="number"]{
+    padding: 5px;
+    text-align: center;
+    width: 50px;
 }
 form label{
     display: inline-block;
     width: calc(100% - 90px);
 }
+form label[for="size"]{
+    display: inline-block;
+    width: calc(100% - 82px);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+span{
+    font-style: italic;
+}
+

@@ -14,6 +14,11 @@ def qr(request):
     )
     qr.add_data(request.POST.get("data"))
     qr.make(fit=True)
+    size = int(request.POST.get("size"))
+    current_size = (4*qr.version+17)*qr.box_size
+    while(current_size<size):
+        qr.box_size+=1
+        current_size = (4*qr.version+17)*qr.box_size
     img = qr.make_image(back_color=request.POST.get('backcolor'), fill_color=request.POST.get("color"))
     buffer = io.BytesIO()
     img.save(buffer, format="PNG")
