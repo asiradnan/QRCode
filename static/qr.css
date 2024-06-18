@@ -34,6 +34,9 @@ p{
     color: #333333;
 }
 @media screen and (max-width:600px) {
+    body{
+        grid-template-rows: 60px auto;
+    }
     div{
         width: 100%;
         min-width: 100px;
@@ -49,5 +52,8 @@ p{
         border-radius: 8px;
         font-size: 16px;
         padding: 3px;
+    }
+    p{
+        font-size: 20px;
     }
 }
