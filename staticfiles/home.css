@@ -24,16 +24,26 @@ textarea{
     font-family: sans-serif;
     border-color: #17cec6;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-
+    resize: none;
+    background-color: azure;
+    outline: none;
+}
+textarea::placeholder {
+    color: #636060;
+    font-style: italic;
 }
 button{
-    width: 180px;
+    width: 170px;
     font-size: 17px;
     padding: 5px;
     border-radius: 5px;
     margin-left: calc(50% - 90px);
     margin-top: 25px;
-    background-color: #1edbb6;
+    background-color: azure;
+    box-shadow: 1px 1px 1px;
+}
+button:hover{
+    cursor: pointer;
 }
 img{
     height: 100px;
@@ -42,6 +52,12 @@ img{
 input[type="color"]{
     height: 25px;
     width: 80px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: azure;
+}
+input[type="color"]:hover{
+    cursor: pointer;
 }
 form label{
     display: inline-block;
