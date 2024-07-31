@@ -1,4 +1,4 @@
-# Live on:  https://qr.asiradnan.com/
+# Live on:  http://makeqr.vercel.app
 ## Features:
 ### 1. Simple UI to turn text/URL into a QR code
 ### 2. Custom colors for QR code!
