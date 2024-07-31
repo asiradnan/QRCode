@@ -3,16 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'qr.css' %}">
     <link rel="icon" href="{% static 'qr_icon.png' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Make QR</title>
 </head>
-<body>
-    <p style="text-align: center;">Your QR is ready!</p>
-    <div>
-        <img src="data:image/png;base64,{{ img }}" alt="QR Code"><br>
-        <a href="data:image/png;base64,{{ img }}" download="QR Code"><button>Download</button></a>
+<body class="bg-info h-100 text-dark">
+    <div class="h-25 d-flex align-items-center">
+        <h2 class="w-100" style="text-align: center;">Your QR is ready!</h2>
     </div>
-    
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <img class="rounded" src="data:image/png;base64,{{ img }}" alt="QR Code"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="data:image/png;base64,{{ img }}" download="QR Code"><button class="btn btn-warning">Download</button></a>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>
