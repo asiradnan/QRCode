@@ -1,6 +1,6 @@
 # 🔳 QR Code Generator
 
-Chotto QR is a simple and efficient **QR code generator** that allows users to convert text or URLs into QR codes with customizable colors and high-resolution options. 🚀
+QR Code is a simple and efficient **QR code generator** that allows users to convert text or URLs into QR codes with customizable colors and high-resolution options. 🚀
 
 🔗 **Live on:** [qr.asiradnan.com](http://qr.asiradnan.com)
 
