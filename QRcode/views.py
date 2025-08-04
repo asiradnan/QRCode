@@ -5,7 +5,6 @@ import base64
 
 
 def qr(request):
-    data=request.POST.get("data")
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
