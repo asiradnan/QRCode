@@ -3,3 +3,7 @@ qrcodeenv
 dockerfile
 __pycache__/
 *.pyc
+.github
+screenshots/
+README.md
+LICENSE
