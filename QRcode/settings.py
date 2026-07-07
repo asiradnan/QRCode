@@ -27,11 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [".asiradnan.com","127.0.0.1"]
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://asiradnan.com",
-    "https://www.asiradnan.com"
-]
-
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Application definition

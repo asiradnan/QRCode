@@ -19,9 +19,7 @@ Check out the QR Code Generator in action: [https://qr.asiradnan.com](https://qr
 - **No Sign-up Required:** Free to use with no account needed.
 
 ## Screenshots
-
-<img src="./screenshots/landing.png" alt="Landing Page  Screenshot" width="150px">
-
+<img src="./screenshots/landing.png" alt="Landing Page  Screenshot" width="150px"> 
 <img src="./screenshots/after_generation.png" alt="After Generation Screenshot" width="150px">
 
 ## License
